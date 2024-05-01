@@ -1,0 +1,98 @@
+/* exercise1 styles */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.part1{
+    h2{
+        color: red;
+    }
+    p{
+        color: white;
+        background-color: black;
+    }
+}
+.part2{
+    h2{
+        color: green;
+    }
+    p{
+        color: green;
+        background-color: darkred;
+    }
+}
+.part3{
+    p{
+        color: green;
+    }
+}
+
+.part4 > p:first-child {
+    color: green;
+}
+
+/* exercise2 styles */
+/* body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding: 10px;
+    background-color: #0000ff;
+    text-align: center;
+    color: white;
+} */
+
+/* exercise2 styles */
+.csym019{
+    float: left;
+    background-color: beige;
+    width: 50%;
+}
+.csym015{
+    float: right;
+    background-color: yellow;
+    width: 50%;
+}
+
+/* exercise3 styles */
+
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    flex: 1;
+    background-color: yellow;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.middle-column {
+    flex: 2;
+    background-color: darkblue;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.right-column {
+    flex: 1;
+    background-color: green;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
