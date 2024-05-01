@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickButton(){
+            var val = document.getElementById("text");
+            alert(val.value)
+
+            var display = document.getElementById("display_value");
+            display.firstChild.nodeValue = val.value;
+        }
+
+        function keyUp(){
+            var val = document.getElementById("text");
+
+            var display = document.getElementById("display_value");
+            display.firstChild.nodeValue = val.value;
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text"  id="text" onkeyup="keyUp()"/>
+    <input type="button" onclick="clickButton();" value = "Preview"/>
+
+    <div id = display_value>
+
+    </div>
+</body>
+</html>
